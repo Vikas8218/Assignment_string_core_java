@@ -14,7 +14,7 @@ package com.coding;
                     System.out.println(word);
                     count++;
                 }
-                start = i++;
+                start++;
             }
         }
         System.out.println("Count of even-length words: " + count);
