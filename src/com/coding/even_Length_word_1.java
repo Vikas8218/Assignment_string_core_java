@@ -6,15 +6,14 @@ package com.coding;
         String str ="Ram is a good boy";
         int count = 0;
         int start = 0;
-
         for (int i = 0; i <= str.length(); i++) {
             if (i == str.length() || str.charAt(i) == ' ') {
-                String word = str.substring(start, i);
-                if (word.length() % 2 == 0) {
+                String word   =str.substring(start,i);  
+                if (word .length() % 2 == 0) {
                     System.out.println(word);
                     count++;
                 }
-                start++;
+                start=i+1;
             }
         }
         System.out.println("Count of even-length words: " + count);
