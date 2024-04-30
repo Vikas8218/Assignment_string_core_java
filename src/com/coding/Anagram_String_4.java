@@ -3,16 +3,16 @@ package com.coding;
 public class Anagram_String_4 {
 
 	public static void main(String[] args) {
-		String str1 ="LISTEN";
-		String str2 ="SLIENH";
+		String str1 ="APPLE";
+		String str2 ="LEAPP";
 		int count =0;
-		StringBuilder sb =new StringBuilder(str1);
+		StringBuilder sb =new StringBuilder(str2);
 		if(str1.length()==str2.length()) {
 			  //str1 = str1.toLowerCase(); 
 	          //str2 = str2.toLowerCase(); 
 			for(int i=0;i<str1.length();i++) {
 			for(int j =0;j<str2.length();j++) {
-				if(str1.charAt(i)==str2.charAt(j)) {
+				if(str1.charAt(i)==sb.charAt(j)) {
 					sb.setCharAt(j, '*');
 					count++;
 				}
