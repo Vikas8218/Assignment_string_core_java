@@ -8,7 +8,7 @@ public class Palindrom_String_3 {
 		for(int i=str.length()-1;i>=0;i--) {
 			str1  =str1+str.charAt(i);
 		}
-		if(str==str1) {
+		if(str.equals(str1)) {
 			System.out.println("It is palindrom number");
 		}
 			else
